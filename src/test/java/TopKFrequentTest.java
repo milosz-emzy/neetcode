@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.HashMap;
 import java.util.stream.Stream;
 
-public class topKFrequentTest {
+public class TopKFrequentTest {
 
     @ParameterizedTest
     @MethodSource("provideData")
@@ -30,6 +30,4 @@ public class topKFrequentTest {
                 Arguments.of(new int[]{7, 7}, 1, new int[]{7})
         );
     }
-
-
 }

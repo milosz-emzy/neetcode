@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
@@ -35,7 +36,7 @@ public class FindPrimeNumbersTest {
     }
 
     private boolean isPrime(int checkToBePrime) {
-        // from 2 to n-1, in order to avoid % by 1 and itself
+        // from 2 to n-1, in order to avoid % by itself
         for (int i = 2; i < checkToBePrime; i++) {
             // 4 % 2 == 0  => 4 is not a prime
             if (checkToBePrime % i == 0) {
