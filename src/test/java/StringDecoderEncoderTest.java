@@ -29,7 +29,6 @@ class StringDecoderEncoderTest {
                     .append("#")
                     .append(s);
         }
-        System.out.println(stringBuilder);
         return stringBuilder.toString();
     }
 
@@ -51,7 +50,6 @@ class StringDecoderEncoderTest {
                 stringBuilder.append(str.charAt(i));
             }
         }
-        System.out.println("Words: " + words);
         return words;
     }
 }
